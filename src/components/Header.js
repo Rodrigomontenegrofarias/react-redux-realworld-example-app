@@ -14,16 +14,16 @@ const LoggedOutView = props => {
 
         <li className="nav-item">
           <Link to="/login" className="nav-link">
-            Sign in
+            Ingresar
           </Link>
         </li>
 
         <li className="nav-item">
           <Link to="/register" className="nav-link">
-            Sign up
+            Registrar
           </Link>
         </li>
-
+        
       </ul>
     );
   }
@@ -57,12 +57,15 @@ const LoggedInView = props => {
           <Link
             to={`/@${props.currentUser.username}`}
             className="nav-link">
-            <img src={props.currentUser.image} className="user-pic" alt={props.currentUser.username} />
+            
             {props.currentUser.username}
           </Link>
         </li>
 
+        
+
       </ul>
+      
     );
   }
 
